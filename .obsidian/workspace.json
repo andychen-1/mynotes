@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "d1e6d20a9993ea98",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce0a0798e1f250a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a76002360e99eea8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "midwayjs/mongodb.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "462bb8bcb24311c3",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d97b6d5096431da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ed2fddd10e618346",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7059299b1e347843",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#配置",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "368ab7725281a1a4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "e3f998aeec958431",
+    "type": "split",
+    "children": [
+      {
+        "id": "457930e27d0d2740",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77377b64369c0d77",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "midwayjs/mongodb.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "d6481fa920a0c6df",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "midwayjs/mongodb.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "40062a9c407094b4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "21fc951e1358c183",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "midwayjs/mongodb.md"
+              }
+            }
+          },
+          {
+            "id": "0ccb64fcd5acc7bf",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "21fc951e1358c183",
+  "lastOpenFiles": [
+    "未命名",
+    "middleware.md",
+    "midwayjs/mongodb.md",
+    "2023-10-24.md",
+    "midwayjs/配置.md",
+    "midwayjs/概要.md",
+    "midwayjs"
+  ]
+}
