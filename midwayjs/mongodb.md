@@ -150,6 +150,7 @@ export default {
 ### 调用实例
 
 ```TypeScript
+// src/service/user.service.ts
 import { Provide } from '@midwayjs/core';
 import { InjectEntityModel } from '@midwayjs/typeorm';
 import { Repository } from 'typeorm';
@@ -159,6 +160,7 @@ import { IUserOptions } from '../interface';
 @Provide()
 export class UserService {
 
+  // 注入实体
   @InjectEntityModel(User)
   userModel: Repository<User>;
 
@@ -171,5 +173,55 @@ export class UserService {
       select: ['username', 'email', 'nickname'],
     });
   }
+}
+```
+
+```TypeScript
+// src/controller/api.controller.ts
+import { Inject, Controller, Post, Body } from '@midwayjs/core';
+import { Context } from '@midwayjs/koa';
+import { JwtService } from '@midwayjs/jwt';
+import { ParseStringPipe } from '../pipe/parseString.pipe';
+import { UserService } from '../service/user.service';
+
+@Controller('/api')
+export class APIController {
+
+  @Inject()
+  ctx: Context;  // 注入上下文
+
+  @Inject()
+  jwtService: JwtService;  //注入 jwt 
+
+  @Inject()
+  userService: UserService; // 注入用户服务对象
+
+  @Post('/auth')
+  async login(
+    @Body('username', [ParseStringPipe]) username: string, // 非空参数
+    @Body('password', [ParseStringPipe]) password: string
+  ) {
+    const user = await this.userService.getUser({ username, password });
+    
+    if (user && user.username === username) {
+      const t = await this.jwtService.sign({ user });
+      return {
+        success: true,
+        message: '用户登录成功',
+        t,
+      };
+    }
+
+    this.ctx.status = 401;
+    return { success: false, message: '用户名或密码错误' };
+  }
+
+  
+
+  @Post('/get_user')
+  async getUser() {
+    return this.ctx.state.user;
+  }
+
 }
 ```
