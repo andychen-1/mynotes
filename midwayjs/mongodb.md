@@ -199,7 +199,7 @@ export class APIController {
   @Post('/auth')
   async login(
     @Body('username', [ParseStringPipe]) username: string, // 非空参数
-    @Body('password', [ParseStringPipe]) password: string
+    @Body('password', [ParseStringPipe]) password: string  // 非空参数
   ) {
     const user = await this.userService.getUser({ username, password });
     
