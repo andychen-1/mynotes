@@ -147,81 +147,41 @@ export default {
 }
 ```
 
-### 调用实例
+### 编写 DAO
+
+```TypeScript
+// src/interface.ts
+/**
+ * @description User-Service parameters
+ */
+export interface IUserOptions {
+  username: string;
+  password?: string; // 没有密码时按 username（主键）查询账户信息
+}
+```
 
 ```TypeScript
 // src/service/user.service.ts
-import { Provide } from '@midwayjs/core';
+import { Provide, Scope, ScopeEnum } from '@midwayjs/core';
 import { InjectEntityModel } from '@midwayjs/typeorm';
 import { Repository } from 'typeorm';
 import { User } from '../entity/user.entity';
 import { IUserOptions } from '../interface';
-  
+
 @Provide()
+@Scope(ScopeEnum.Singleton)
 export class UserService {
 
-  // 注入实体
   @InjectEntityModel(User)
-  userModel: Repository<User>;
+  userModel: Repository<User>; //注入实体模型
 
   async getUser(options: IUserOptions) {
-    const { username, password } = options;
-
-	// 查询用户信息
+	// 查询账户信息
     return await this.userModel.findOne({
-      where: { username, password },
+      where: options,
       select: ['username', 'email', 'nickname'],
     });
   }
 }
 ```
 
-```TypeScript
-// src/controller/api.controller.ts
-import { Inject, Controller, Post, Body } from '@midwayjs/core';
-import { Context } from '@midwayjs/koa';
-import { JwtService } from '@midwayjs/jwt';
-import { ParseStringPipe } from '../pipe/parseString.pipe';
-import { UserService } from '../service/user.service';
-
-@Controller('/api')
-export class APIController {
-
-  @Inject()
-  ctx: Context;  // 注入上下文
-
-  @Inject()
-  jwtService: JwtService;  //注入 jwt 
-
-  @Inject()
-  userService: UserService; // 注入用户服务对象
-
-  @Post('/auth')
-  async login(
-    @Body('username', [ParseStringPipe]) username: string, // 非空参数
-    @Body('password', [ParseStringPipe]) password: string  // 非空参数
-  ) {
-    const user = await this.userService.getUser({ username, password });
-    
-    if (user && user.username === username) {
-      const t = await this.jwtService.sign({ user });
-      return {
-        success: true,
-        message: '用户登录成功',
-        t,
-      };
-    }
-
-    this.ctx.status = 401;
-    return { success: false, message: '用户名或密码错误' };
-  }
-
-  
-
-  @Post('/get_user')
-  async getUser() {
-    return this.ctx.state.user;
-  }
-
-}
-```
