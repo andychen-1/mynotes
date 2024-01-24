@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cheetah/CHAMP - Robot SLAM.md",
+                "file": "cheetah/MIT_cheetah Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cheetah/CHAMP - Robot SLAM.md",
+                "file": "cheetah/MIT_cheetah Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cheetah/CHAMP - Robot SLAM.md",
+                "file": "cheetah/MIT_cheetah Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cheetah/CHAMP - Robot SLAM.md"
+                "file": "cheetah/MIT_cheetah Notes.md"
               }
             }
           },
@@ -156,8 +156,8 @@
   },
   "active": "8a00654292f4bcef",
   "lastOpenFiles": [
-    "cheetah/MIT_cheetah Notes.md",
     "cheetah/CHAMP - Robot SLAM.md",
+    "cheetah/MIT_cheetah Notes.md",
     "midwayjs/MongoDB.md",
     "cheetah",
     "未命名.md",
