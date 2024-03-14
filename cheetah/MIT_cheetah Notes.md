@@ -67,3 +67,80 @@ $ wsl
 sudo apt-get install jstest-gtk
 ```
 
+
+## 机器狗自启动脚本
+
+
+```bash
+# ~/<project>/scripts/run_mc.sh
+
+#!/bin/bash
+# enable multicast and add route for lcm out the top
+
+sudo ifconfig enp1s0 multicast
+sudo route add -net 224.0.0.0 netmask 240.0.0.0 dev enp1s0
+
+# configure libraries
+sudo LD_LIBRARY_PATH=. ldconfig
+#sudo LD_LIBRARY_PATH=. ldd ./robot
+sudo LD_LIBRARY_PATH=. $1 m r f l &
+
+sudo LD_LIBRARY_PATH=. $2 &
+```
+
+```bash
+#!/bin/bash
+# rc.local
+cd /home/robot/robot-software/build/
+./run_mc.sh ./mit_ctrl ./speech_controller
+exit 0
+```
+
+更多详细内容，请参考 https://blog.csdn.net/weixin_42249893/article/details/122594676
+
+## 构建 IntelRealSense SDK2 （Ubuntu18.04.06）
+
+###  修补 linux 内核模块时，出现 git 仓库不存在错误
+
+```bash
+# 下载、修补与构建受 realsense 驱动影响的内核模块
+$ cd librealsense-master
+$ ./scripts/patch-realsense-ubuntu-lts.sh
+# ~ output 下载 ubuntu 内核源码时报错
+# fatal: repository 'https://kernel.ubuntu.com/ubuntu/ubuntu-bionic.git/' not found
+```
+
+留意 ./ubuntu-bionic-hwe-5.4 文件夹是否存在，存在则删除
+
+```bash
+$ rm -rf ubuntu-bionic-hwe-5.4
+```
+
+修改文件 patch-realsense-ubuntu-lts.sh
+
+```shell
+# ~/scripts/patch-realsense-ubuntu-lts.sh
+# ...
+# Get the linux kernel and change into source tree
+if [ ! -d ${kernel_name} ]; then
+	mkdir ${kernel_name}
+	cd ${kernel_name}
+	git init
+	## 修改当前文件第 107 行	##
+	# git remote add origin https://kernel.ubuntu.com/ubuntu/ubuntu-${ubuntu_codename}.git
+	git remote add origin git://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/${ubuntu_codename}
+	##########################
+	
+	cd ..
+fi
+# ...
+```
+
+
+## 指定 usb 串口设备文件名称
+
+```config
+# /etc/udev/rules.d/99-HL-340.rules
+SUBSYSTEMS=="usb" ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", ATTRS{Product}=="USB Serial" RUN+="/bin/sh -c 'mv /dev/%k /dev/ttyUSB1'"
+```
+
