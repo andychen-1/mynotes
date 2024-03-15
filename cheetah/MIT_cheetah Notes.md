@@ -135,8 +135,6 @@ if [ ! -d ${kernel_name} ]; then
 fi
 # ...
 ```
-
-
 ## 指定 usb 串口设备文件名称
 
 ```config

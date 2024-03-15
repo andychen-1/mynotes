@@ -96,7 +96,9 @@ $ sudo aptitude install ros-kinetic-desktop-full
 ```bash
 ## 安装 Ros 包管理工具
 $ apt install python-rosdep -y
-# 初始化包管理工具
+# 初始化包管理工具 
+# 如果20-default.list 无法下载，可复制其他已安装系统的缓存文件
+# scp -r ~/.ros root@<host>:~/
 $ sudo rosdep init
 # 更新包管理工具 (包含已停止更新的发行版)
 $ rosdep update --include-eol-distros
