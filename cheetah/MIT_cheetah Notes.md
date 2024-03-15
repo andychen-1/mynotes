@@ -135,6 +135,13 @@ if [ ! -d ${kernel_name} ]; then
 fi
 # ...
 ```
+
+### 升级内核版本
+
+```bash
+$ apt-get upgrade linux-image-generic
+```
+
 ## 指定 usb 串口设备文件名称
 
 ```config
