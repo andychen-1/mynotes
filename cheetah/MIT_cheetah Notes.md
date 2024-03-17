@@ -149,3 +149,36 @@ $ apt-get upgrade linux-image-generic
 SUBSYSTEMS=="usb" ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", ATTRS{Product}=="USB Serial" RUN+="/bin/sh -c 'mv /dev/%k /dev/ttyUSB1'"
 ```
 
+## 安装 UP_board Linux 内核
+
+### 更新内核
+
+```bash
+# 安装 upboard PPA repository
+$ sudo add-apt-repository ppa:up-division/5.4-upboard
+# 更新安装源
+$ sudo apt update
+# 删除所有通用安装的内核（在“中止内核删除”问题上选择“否”）
+$ sudo apt-get autoremove --purge 'linux-.*generic'
+# 安装 ubuntu 18.04 和 20.04 共享相同的5.4内核
+$ sudo apt-get install linux-generic-hwe-18.04-5.4-upboard
+# 升级所有软件包到最新可用版本
+$ sudo apt dist-upgrade -y
+```
+### 更新引导配置
+
+```bash
+# 编辑引导配置文件，修改或添加这一行：
+# GRUB_CMDLINE_LINUX_DEFAULT="quiet splash up_board.spidev1=Y"
+$ sudo vim /etc/default/grub
+# 重新生成 GRUB 的配置文件（引导程序）
+$ sudo update-grub
+# 重启
+$ sudo reboot
+# ...
+# 重新进入系统后，检查 SPI 端口是否存在
+$ ls -l /dev/spidev2.1
+```
+
+
+
