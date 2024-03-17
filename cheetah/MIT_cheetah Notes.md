@@ -148,7 +148,6 @@ $ apt-get upgrade linux-image-generic
 # /etc/udev/rules.d/99-HL-340.rules
 SUBSYSTEMS=="usb" ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", ATTRS{Product}=="USB Serial" RUN+="/bin/sh -c 'mv /dev/%k /dev/ttyUSB1'"
 ```
-
 ## 安装 upboard linux 5.4 内核
 
 ### 更新内核
@@ -182,6 +181,12 @@ $ uname -a
 # 检查 SPI 端口是否存在
 $ ls -l /dev/spidev2.1
 ```
+
+### 参考文档 
+
+[5.4内核安装](https://github.com/up-board/up-community/wiki/Ubuntu_18.04#Install_Ubuntu_kernel_5.0.0_locally_from_debian_packages_on_Ubuntu_18.04)
+
+[修改引导配置](https://github.com/pazeshun/sphand_ros/commit/e34e32c86f276232a069308afa490fbc4017bec2)
 
 
 
