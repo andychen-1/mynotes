@@ -149,7 +149,7 @@ $ apt-get upgrade linux-image-generic
 SUBSYSTEMS=="usb" ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", ATTRS{Product}=="USB Serial" RUN+="/bin/sh -c 'mv /dev/%k /dev/ttyUSB1'"
 ```
 
-## 安装 UP_board Linux 内核
+## 安装 upboard linux 5.4 内核
 
 ### 更新内核
 
@@ -176,7 +176,10 @@ $ sudo update-grub
 # 重启
 $ sudo reboot
 # ...
-# 重新进入系统后，检查 SPI 端口是否存在
+# 重新进入系统后
+# 检查内核版本 ~output: Linux <username> 5.4.0-1-generic #0~upboard5-Ubuntu
+$ uname -a
+# 检查 SPI 端口是否存在
 $ ls -l /dev/spidev2.1
 ```
 
