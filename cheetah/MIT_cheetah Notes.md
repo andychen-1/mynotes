@@ -190,3 +190,202 @@ $ ls -l /dev/spidev2.1
 
 
 
+
+
+## ORB-SLAM3 Camera IMU 标定
+
+参考文档： https://github.com/UZ-SLAMLab/ORB_SLAM3/blob/master/Calibration_Tutorial.pdf
+
+### 安装 Kalibr
+
+1. 安装 ROS 1 桌面环境和 catkin 工具
+
+```bash
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+sudo apt-get update
+export ROS1_DISTRO=melodic # kinetic=16.04, melodic=18.04, noetic=20.04
+sudo apt-get install ros-$ROS1_DISTRO-desktop-full
+sudo apt-get install python-catkin-tools # ubuntu 16.04, 18.04
+sudo apt-get install python3-catkin-tools python3-osrf-pycommon # ubuntu 20.04
+```
+
+2. 安装构建和运行依赖项
+
+```bash
+sudo apt-get install -y \
+    git wget autoconf automake nano \
+    libeigen3-dev libboost-all-dev libsuitesparse-dev \
+    doxygen libopencv-dev \
+    libpoco-dev libtbb-dev libblas-dev liblapack-dev libv4l-dev
+# Ubuntu 16.04
+sudo apt-get install -y python2.7-dev python-pip python-scipy \
+    python-matplotlib ipython python-wxgtk3.0 python-tk python-igraph python-pyx
+# Ubuntu 18.04
+sudo apt-get install -y python3-dev python-pip python-scipy \
+    python-matplotlib ipython python-wxgtk4.0 python-tk python-igraph python-pyx
+# Ubuntu 20.04
+sudo apt-get install -y python3-dev python3-pip python3-scipy \
+    python3-matplotlib ipython3 python3-wxgtk4.0 python3-tk python3-igraph python3-pyx
+```
+
+3. 创建catkin工作区并克隆项目
+
+```bash
+mkdir -p ~/kalibr_workspace/src
+cd ~/kalibr_workspace
+export ROS1_DISTRO=noetic # kinetic=16.04, melodic=18.04, noetic=20.04
+source /opt/ros/$ROS1_DISTRO/setup.bash
+catkin init
+catkin config --extend /opt/ros/$ROS1_DISTRO
+catkin config --merge-devel # Necessary for catkin_tools >= 0.4.
+catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release
+cd ~/kalibr_workspace/src
+git clone https://github.com/ethz-asl/kalibr.git
+```
+
+4. 使用发布_配置构建代码。根据可用内存，可能需要减少构建线程（例如将 -j2 添加到 catkin_make）
+
+```bash
+cd ~/kalibr_workspace/
+catkin build -DCMAKE_BUILD_TYPE=Release -j4
+```
+
+5. 构建完成后，您必须获取 catkin 工作区设置以使用 Kalibr
+
+```bash
+source ~/kalibr_workspace/devel/setup.bash
+rosrun kalibr <command_you_want_to_run_here>
+```
+### 标定流程
+
+1. 构建标定的工作输出目录
+
+```bash
+# 进入 ORB_SLAM3 目录
+cd ~/ORB_SLAM3
+# 创建标定工作目录
+mkdir -p recorder/cam0
+mkdir recorder/IMU
+```
+
+2. 记录传感器数据
+
+```bash
+# 输出结果分别对应 recorder/cam0 与 recorder/IMU
+./Examples/Calibration/recorder_realsense_D435i ./Examples/Calibration/ 
+# 命令执行后，
+# cam0 目录输出 png 文件，对应每一个视频帧。
+# IMU 目录则输出 acc.txt 与 gyro.txt，分别对应加速度与陀螺仪 
+```
+
+3. 使用 python 脚本处理 IMU 数据并插入加速度计测量值以使其与陀螺仪同步
+
+```bash
+python3 \
+	./Examples/Calibration/python_scripts/process_imu.py \
+	./Examples/Calibration/recorder/
+# 命令执行后，会在 recorder 目录输出 imu0.csv
+```
+
+4. 将原始数据转换输出为 bag 格式
+
+```bash
+# 进入到 kalibr 工具箱（python 脚本）
+cd ~/kalibr_workspace/src/kalibr/aslam_offline_calibration/kalibr/python/
+# 执行 bag 生成命令
+./kalibr_bagcreater \
+--folder ~/ORB_SLAM3/Examples/Calibration/recorder/. \
+--output -bag ~/ORB_SLAM3/Examples/Calibration/recorder/recorder.bag
+# 查看 bag 文件信息
+rosbag info ~/ORB_SLAM3/Examples/Calibration/recorder/recorder.bag
+# ~ output
+> path:        /root/ORB_SLAM3/Examples/Calibration/recorder/recorder.bag
+> version:     2.0
+> duration:    1:23s (83s)
+> start:       Mar 25 2024 17:25:57.64 (1711358757.64)
+> end:         Mar 25 2024 17:27:20.84 (1711358840.84)
+> size:        658.1 MB
+> messages:    18632
+> compression: none [750/750 chunks]
+> types:       sensor_msgs/Image [060021388200f6f0f447d0fcd9c64743]
+>              sensor_msgs/Imu   [6a62c6daae103f4ff57a132d6f95cec2]
+> topics:      /cam0/image_raw    2225 msgs    : sensor_msgs/Image
+>              /imu0             16407 msgs    : sensor_msgs/Imu
+```
+
+5. 相机标定 Camera Calibration
+
+从 https://github.com/ethz-asl/kalibr/wiki/downloads 下载标定文件
+
+``april_6x6_80x80cm_A0.pdf``
+
+![ april_6x6_80x80cm_A0.pdf](https://user-images.githubusercontent.com/33208530/105625447-68079500-5e64-11eb-8a24-f743c3f7ad2d.png)
+
+将 pdf 打印或者显示在屏幕上，都需要测量其中一个方格的大小，若大小等于 4cm , 在 yaml 配置文件修改 ``tagSize: 0.04``
+
+``april_6x6_80x80cm.yaml``  
+
+```yaml
+target_type: 'aprilgrid' #gridtype
+tagCols: 6               #number of apriltags
+tagRows: 6               #number of apriltags
+tagSize: 0.04            #size of apriltag, edge to edge [m]
+tagSpacing: 0.3          #ratio of space between tags to tagSize
+```
+
+执行相机标定命令
+
+```bash
+# cd ~/kalibr_workspace/src/kalibr/aslam_offline_calibration/kalibr/python/
+./kalibr_calibrate_cameras \
+--bag ~/ORB_SLAM3/Examples/Calibration/recorder/recorder.bag \
+--topics /cam0/image_raw --models pinhole-radtan \
+--target ~/ORB_SLAM3/Examples/Calibration/recorder/april_6x6_80x80cm.yaml
+
+# 命令执行后，会在 bag 文件同级目录输出
+# recorder-camchain.yaml, recorder-report-cam.pdf, recorder-results-cam.txt
+```
+
+6. 惯性标定（相机与IMU)
+
+从 https://github.com/ethz-asl/kalibr/wiki/downloads 下载标定文件
+
+``imu_adis16448.yaml``
+
+```yaml
+rostopic: /imu0 # rosbag info recorder.bag --- topics: /cam0/image_raw /imu0
+update_rate: 197.67 #Hz (16407 / 83)
+
+accelerometer_noise_density: 0.01 #continous
+accelerometer_random_walk: 0.0002
+gyroscope_noise_density: 0.005 #continous
+gyroscope_random_walk: 4.0e-06
+```
+
+``cam_april-camchain.yaml``
+
+该文件由 ``kalibr_calibrate_cameras`` 命令输出生成
+
+```yaml
+cam0:
+  cam_overlaps: []
+  camera_model: pinhole
+  distortion_coeffs: [0.004498989828596411, -0.002635399149782393, 0.0001850899312009363, 0.0002297455683999329]
+  distortion_model: radtan
+  intrinsics: [388.24656945217055, 388.6195279024117, 325.35775283236075, 239.89603853101096]
+  resolution: [640, 480]
+  rostopic: /cam0/image_raw
+```
+
+执行惯性标定命令
+
+```bash
+./kalibr_calibrate_imu_camera \
+--bag ~/ORB_SLAM3/Examples/Calibration/recorder/recorder.bag \
+--cam ~/ORB_SLAM3/Examples/Calibration/recorder/cam_april-camchain.yaml \
+--imu ~/ORB_SLAM3/Examples/Calibration/recorder/imu_adis16448.yaml \
+--imu-models calibrated \
+--target ~/ORB_SLAM3/Examples/Calibration/recorder/april_6x6_80x80cm.yaml
+# 命令执行后，会输出 recorder-camchain-imucam.yaml, recorder-imu.yaml, recorder-report-imucam.pdf, recorder-results-imucam.txt 等文件
+```
