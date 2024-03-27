@@ -303,7 +303,7 @@ cd ~/kalibr_workspace/src/kalibr/aslam_offline_calibration/kalibr/python/
 # 执行 bag 生成命令
 ./kalibr_bagcreater \
 --folder ~/ORB_SLAM3/Examples/Calibration/recorder/. \
---output -bag ~/ORB_SLAM3/Examples/Calibration/recorder/recorder.bag
+--output-bag ~/ORB_SLAM3/Examples/Calibration/recorder/recorder.bag
 # 查看 bag 文件信息
 rosbag info ~/ORB_SLAM3/Examples/Calibration/recorder/recorder.bag
 # ~ output
@@ -386,7 +386,7 @@ cam0:
 ```bash
 ./kalibr_calibrate_imu_camera \
 --bag ~/ORB_SLAM3/Examples/Calibration/recorder/recorder.bag \
---cam ~/ORB_SLAM3/Examples/Calibration/recorder/cam_april-camchain.yaml \
+--cam ~/ORB_SLAM3/Examples/Calibration/recorder/recorder-camchain.yaml \
 --imu ~/ORB_SLAM3/Examples/Calibration/recorder/imu_adis16448.yaml \
 --imu-models calibrated \
 --target ~/ORB_SLAM3/Examples/Calibration/recorder/april_6x6_80x80cm.yaml
