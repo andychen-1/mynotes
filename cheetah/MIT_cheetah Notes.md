@@ -271,10 +271,17 @@ mkdir recorder/IMU
 
 2. 记录传感器数据
 
+从 https://github.com/ethz-asl/kalibr/wiki/downloads 下载标定文件
+
+``april_6x6_80x80cm_A0.pdf``
+
+![ april_6x6_80x80cm_A0.pdf](https://user-images.githubusercontent.com/33208530/105625447-68079500-5e64-11eb-8a24-f743c3f7ad2d.png)
+
 ```bash
 # 输出结果分别对应 recorder/cam0 与 recorder/IMU
 ./Examples/Calibration/recorder_realsense_D435i ./Examples/Calibration/recorder 
 # 命令执行后，
+# 对准 april_6x6_80x80cm_A0.pdf 中的图像进行 r, p, y, x, y, z 六个自由度的旋转与移动
 # cam0 目录输出 png 文件，对应每一个视频帧。
 # IMU 目录则输出 acc.txt 与 gyro.txt，分别对应加速度与陀螺仪 
 ```
@@ -318,11 +325,7 @@ rosbag info ~/ORB_SLAM3/Examples/Calibration/recorder/recorder.bag
 
 从 https://github.com/ethz-asl/kalibr/wiki/downloads 下载标定文件
 
-``april_6x6_80x80cm_A0.pdf``
-
-![ april_6x6_80x80cm_A0.pdf](https://user-images.githubusercontent.com/33208530/105625447-68079500-5e64-11eb-8a24-f743c3f7ad2d.png)
-
-将 pdf 打印或者显示在屏幕上，都需要测量其中一个方格的大小，若大小等于 4cm , 在 yaml 配置文件修改 ``tagSize: 0.04``
+将 ``april_6x6_80x80cm_A0.pdf`` 打印或者显示在屏幕上，需要测量其中一个方格的大小，若大小等于 4cm , 则在 ``april_6x6_80x80cm.yaml`` 文件中修改 ``tagSize: 0.04``
 
 ``april_6x6_80x80cm.yaml``  
 
