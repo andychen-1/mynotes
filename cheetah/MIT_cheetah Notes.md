@@ -273,7 +273,7 @@ mkdir recorder/IMU
 
 ```bash
 # 输出结果分别对应 recorder/cam0 与 recorder/IMU
-./Examples/Calibration/recorder_realsense_D435i ./Examples/Calibration/ 
+./Examples/Calibration/recorder_realsense_D435i ./Examples/Calibration/recorder 
 # 命令执行后，
 # cam0 目录输出 png 文件，对应每一个视频帧。
 # IMU 目录则输出 acc.txt 与 gyro.txt，分别对应加速度与陀螺仪 
