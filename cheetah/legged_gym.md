@@ -1,7 +1,8 @@
 # legged_gym 机器人强化学习环境搭建
 
->  (NVIDIA RTX 3060 + ubuntu20.04)
-** 由于虚拟系统不太兼容 Nvidia 驱动，例如 VMware、WSL2 Ubuntu，建设使用 Ubuntu 物理系统 **
+>  NVIDIA RTX 3060 + ubuntu20.04
+
+**由于大部分的虚拟系统不兼容 Nvidia 驱动，例如 VMware、WSL2 Ubuntu，建设使用 Ubuntu 物理系统**
 
 
 ## 安装 windows + unbuntu 双引导
