@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cheetah/MIT_cheetah Notes.md",
+                "file": "cheetah/legged_gym 机器人强化学习环境搭建.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cheetah/MIT_cheetah Notes.md",
+                "file": "cheetah/legged_gym 机器人强化学习环境搭建.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cheetah/MIT_cheetah Notes.md",
+                "file": "cheetah/legged_gym 机器人强化学习环境搭建.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cheetah/MIT_cheetah Notes.md"
+                "file": "cheetah/legged_gym 机器人强化学习环境搭建.md"
               }
             }
           },
@@ -157,13 +157,13 @@
   "active": "b5d3b46748a02fa6",
   "lastOpenFiles": [
     "cheetah/MIT_cheetah Notes.md",
+    "cheetah/legged_gym 机器人强化学习环境搭建.md",
     "cheetah/CHAMP - Robot SLAM.md",
     "cheetah/Doxygen.md",
     "midwayjs/MySql.md",
     "midwayjs/Passport.md",
     "midwayjs/React Router.md",
     "midwayjs/MongoDB.md",
-    "cheetah/未命名.md",
     "cheetah",
     "未命名.md",
     "middleware.md",
