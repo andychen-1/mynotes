@@ -42,7 +42,6 @@ $ sudo apt upgrade -y
 2. 安装 Nvidia 驱动
 
 ```bash
-
 $ sudo apt update
 # 查询适配的 NVIDAI 驱动版本
 $ nvidia-detector
@@ -57,7 +56,6 @@ $ sudo apt install nvidia-driver-535
 $ sudo reboot
 
 # ... 重启中 ...
-
 
 # 如果重启后进入系统时出现黑屏，可按 <Ctrl> + <Alt> + F3 进入 tty 交互模式，然后按 <Ctrl> + <Alt> + F1 重新进入桌面模式
 # 也可以再次重启，在 BIOS 中选择 “独显模式”（各个厂商的设置可能不尽相同，依据实际情况而定）
