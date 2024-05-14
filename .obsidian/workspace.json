@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cheetah/legged_gym 机器人强化学习环境搭建.md",
+                "file": "cheetah/legged_gym.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cheetah/legged_gym 机器人强化学习环境搭建.md",
+                "file": "cheetah/legged_gym.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cheetah/legged_gym 机器人强化学习环境搭建.md",
+                "file": "cheetah/legged_gym.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cheetah/legged_gym 机器人强化学习环境搭建.md"
+                "file": "cheetah/legged_gym.md"
               }
             }
           },
@@ -157,7 +157,7 @@
   "active": "b5d3b46748a02fa6",
   "lastOpenFiles": [
     "cheetah/MIT_cheetah Notes.md",
-    "cheetah/legged_gym 机器人强化学习环境搭建.md",
+    "cheetah/legged_gym.md",
     "cheetah/CHAMP - Robot SLAM.md",
     "cheetah/Doxygen.md",
     "midwayjs/MySql.md",

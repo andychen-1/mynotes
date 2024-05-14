@@ -1,3 +1,5 @@
+# legged_gym 机器人强化学习环境搭建
+
 >  (NVIDIA RTX 3060 + ubuntu20.04)
 ** 由于虚拟系统不太兼容 Nvidia 驱动，例如 VMware、WSL2 Ubuntu，建设使用 Ubuntu 物理系统 **
 
@@ -56,7 +58,7 @@ $ sudo apt install nvidia-driver-535
 $ sudo reboot
 
 # ... 重启中 ...
-
+、
 # 如果重启后进入系统时出现黑屏，可按 <Ctrl> + <Alt> + F3 进入 tty 交互模式，然后按 <Ctrl> + <Alt> + F1 重新进入桌面模式
 # 也可以再次重启，在 BIOS 中选择 “独显模式”（各个厂商的设置可能不尽相同，依据实际情况而定）
 
