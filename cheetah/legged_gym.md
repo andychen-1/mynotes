@@ -156,6 +156,9 @@ $ git clone https://github.com/leggedrobotics/legged_gym.git
 # 安装 torch2.3+cu121 (项目原文档中指定的版本是 torch1.10.0+cu113，但在当前系统中会出现 GPU 内存分配异常等问题）
 $ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
+# 下载Isaac_GYM: https://developer.nvidia.com/isaac-gym/download
+# 注：下载Isaac_GYM需要注册nvidia并成为会员，整个过程不需要付费
+
 # 余下的编译构建步骤可按 github 项目文档 https://github.com/leggedrobotics/legged_gym 来执行
 # 在运行示例 `python3 legged_gym/scripts/train.py --task=anymal_c_flat` 可能出现以下问题
 
