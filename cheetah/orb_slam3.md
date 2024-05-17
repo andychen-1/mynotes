@@ -42,7 +42,7 @@ sudo make install
 
 ## 安装 librealsense
 
-参考 [Linux/Ubuntu - RealSense SDK 2.0 Build Guide](https://dev.intelrealsense.com/docs/compiling-librealsense-for-linux-ubuntu-guide)
+参考文档 [Linux/Ubuntu - RealSense SDK 2.0 Build Guide](https://dev.intelrealsense.com/docs/compiling-librealsense-for-linux-ubuntu-guide)
 
 ```bash
 # 升级系统
@@ -77,6 +77,8 @@ sudo make uninstall && make clean && make && sudo make install
 ```
 
 ## 安装 OpenCV  (>=4.4.0)
+
+参考文档 [tutorial_linux_install](https://docs.opencv.org/4.x/d7/d9f/tutorial_linux_install.html)
 
 ```bash
 # 安装 GTK2.0 库
