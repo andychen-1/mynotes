@@ -174,6 +174,8 @@ cd ~/rsl_rl/ && git checkout v1.0.2 && pip instal-e .
 # 运行时，如果出现闪退，可适当减少训练环境数量 (--num_envs)，默认是 4096，例如
 $ cd ~/legged_gym
 $ python3 legged_gym/scripts/train.py --task=anymal_c_flat --num_envs=1024
+# 或者关闭图形渲染
+$ python3 legged_gym/scripts/train.py --task=anymal_c_flat --num_envs=2048 --headless
 
 # 训练自定义模型
 $ cd ~/legged_gym
