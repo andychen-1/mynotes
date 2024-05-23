@@ -20,8 +20,7 @@ tar -zxvf eigen-3.3.8.tar.gz && cd eigen-3.3.8
 # 编译与安装
 mkdir build && cd build
 cmake ..
-# -jn 对应当前 cpu 核数 
-make -j8 && sudo make install
+sudo make install
 ```
 
 ## 安装 Pangolin
@@ -71,7 +70,8 @@ cd librealsense
 # 编译构建
 mkdir build && cd build
 cmake ..
-sudo make install
+# -jn 对应当前 cpu 核数 
+make -j8 && sudo make install
 
 # 重新安装构建
 sudo make uninstall && make clean && make && sudo make install
