@@ -4,20 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "b76ea21f9258e49c",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "adc4ff52e3436da7",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
         "id": "f04312fdc5c11bf9",
         "type": "tabs",
         "children": [
@@ -28,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "midwayjs/MongoDB.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -170,8 +156,8 @@
   },
   "active": "cef380495e2f71bf",
   "lastOpenFiles": [
-    "midwayjs/mongodb.md",
     "midwayjs/MongoDB.md",
+    "midwayjs/mongodb.md",
     "midwayjs/React Router.md",
     "midwayjs/Passport.md",
     "cheetah/orb_slam3.md",
