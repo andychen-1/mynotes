@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f04312fdc5c11bf9",
+        "id": "db54448358549cb0",
         "type": "tabs",
         "children": [
           {
-            "id": "cef380495e2f71bf",
+            "id": "2a676a76ea68392b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "midwayjs/MongoDB.md",
-                "mode": "preview",
+                "file": "linux/Ubuntu 指令杂记.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 492.5
   },
   "right": {
     "id": "e3f998aeec958431",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "midwayjs/MongoDB.md",
+                "file": "linux/Ubuntu 指令杂记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "midwayjs/MongoDB.md",
+                "file": "linux/Ubuntu 指令杂记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "midwayjs/MongoDB.md"
+                "file": "linux/Ubuntu 指令杂记.md"
               }
             }
           },
@@ -154,15 +154,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cef380495e2f71bf",
+  "active": "2a676a76ea68392b",
   "lastOpenFiles": [
+    "linux",
+    "linux/Ubuntu 指令杂记.md",
+    "cheetah/MIT_cheetah Notes.md",
     "midwayjs/MongoDB.md",
     "midwayjs/mongodb.md",
     "midwayjs/React Router.md",
     "midwayjs/Passport.md",
     "cheetah/orb_slam3.md",
     "cheetah/legged_gym.md",
-    "cheetah/MIT_cheetah Notes.md",
     "cheetah/Doxygen.md",
     "cheetah/CHAMP - Robot SLAM.md",
     "未命名.canvas",
@@ -171,7 +173,6 @@
     "gpt-mpc-wbc",
     "midwayjs/MySql.md",
     "cheetah",
-    "未命名.md",
     "middleware.md",
     "2023-10-24.md",
     "midwayjs/配置.md",
