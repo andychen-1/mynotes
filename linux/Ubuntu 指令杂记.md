@@ -13,9 +13,34 @@ du -ah --max-depth=1 .
 ```
 
 
+###  evo_traj
+
+解析  ORB_SLAM TUM 格式的轨迹数据的 python 工具 ，在其依赖包  matplotlib 的版本大于 3.3.8 的时候报以下错误
+
+```
+ImportError: cannot import name 'docstring' from 'matplotlib' (/home/kevin/.local/lib/python3.10/site-packages/matplotlib/__init__.py)
+```
+
+以下是解决方法
+
+```bash
+pip uninstall matplotlib
+# 重新安装低版本的 matplotlib
+pip install matplotlib==3.7.3
+```
+
 ### Docker
 
 ```bash
 # 允许在 Docker 容器中运行的图形应用程序能够访问宿主机的 X 服务器
 xhost +local:docker
+# 导出所有镜像保存为压缩文件
+docker save $(docker images --format '{{.Repository}}:{{.Tag}}') | gzip > ubu18-dev-images.tar.gz
+
+# 创建容器，测试游戏手柄
+docker run -it --name ubu18_test_gamepad --env DISPLAY=$DISPLAY --volume /tmp/.X11-unix:/tmp/.X11-unix:rw --volume /home/kevin/development/shandyrobotup-docker-ubu18/shandy-robot-upboard:/root/shandy-robot-upboard -volume /dev/input:/dev/input --device /dev/input/js0 ubuntu:18.04
+
+# 创建容器，测试语音控制
+docker run -it --name ubu18_test_gamepad --env DISPLAY=$DISPLAY --volume /tmp/.X11-unix:/tmp/.X11-unix:rw --volume /home/kevin/development/shandyrobotup-docker-ubu18/shandy-robot-upboard:/root/shandy-robot-upboard --device /dev/ttyUSB0 ubuntu:18.04
+
 ```
