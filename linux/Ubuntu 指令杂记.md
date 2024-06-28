@@ -24,8 +24,9 @@ ImportError: cannot import name 'docstring' from 'matplotlib' (/home/kevin/.loca
 以下是解决方法
 
 ```bash
+# 卸载当前版本
 pip uninstall matplotlib
-# 重新安装低版本的 matplotlib
+# 重新安装旧版本
 pip install matplotlib==3.7.3
 ```
 
