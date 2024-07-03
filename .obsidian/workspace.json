@@ -11,11 +11,9 @@
             "id": "2a676a76ea68392b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "数学/线性代数.md",
-                "mode": "source",
-                "source": false
+                "file": "Diagram 1.svg"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "数学/线性代数.md",
+                "file": "Diagram 1.svg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "数学/线性代数.md",
+                "file": "Diagram 1.svg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "数学/线性代数.md"
+                "file": "Diagram 1.svg"
               }
             }
           },
@@ -154,12 +152,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2a676a76ea68392b",
+  "active": "ed2fddd10e618346",
   "lastOpenFiles": [
-    "Diagram 1.svg.xml",
-    "Diagram 1.svg",
     "Diagram.svg",
     "数学/线性代数.md",
+    "Diagram 1.svg.xml",
+    "Diagram 1.svg",
     "midwayjs/React Router.md",
     "Diagram.svg.xml",
     "未命名.canvas",
