@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Ubuntu 指令杂记.md",
+                "file": "数学/线性代数.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/Ubuntu 指令杂记.md",
+                "file": "数学/线性代数.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/Ubuntu 指令杂记.md",
+                "file": "数学/线性代数.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/Ubuntu 指令杂记.md"
+                "file": "数学/线性代数.md"
               }
             }
           },
@@ -156,18 +156,25 @@
   },
   "active": "2a676a76ea68392b",
   "lastOpenFiles": [
-    "linux",
+    "Diagram 1.svg.xml",
+    "Diagram 1.svg",
+    "Diagram.svg",
+    "数学/线性代数.md",
+    "midwayjs/React Router.md",
+    "Diagram.svg.xml",
+    "未命名.canvas",
     "linux/Ubuntu 指令杂记.md",
+    "数学",
+    "未命名.md",
+    "linux",
     "cheetah/MIT_cheetah Notes.md",
     "midwayjs/MongoDB.md",
     "midwayjs/mongodb.md",
-    "midwayjs/React Router.md",
     "midwayjs/Passport.md",
     "cheetah/orb_slam3.md",
     "cheetah/legged_gym.md",
     "cheetah/Doxygen.md",
     "cheetah/CHAMP - Robot SLAM.md",
-    "未命名.canvas",
     "cheetah/GPT 问答.md",
     "gpt-mpc-wbc/未命名.md",
     "gpt-mpc-wbc",

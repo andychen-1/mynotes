@@ -43,5 +43,4 @@ docker run -it --name ubu18_test_gamepad --env DISPLAY=$DISPLAY --volume /tmp/.X
 
 # 创建容器，测试语音控制
 docker run -it --name ubu18_test_gamepad --env DISPLAY=$DISPLAY --volume /tmp/.X11-unix:/tmp/.X11-unix:rw --volume /home/kevin/development/shandyrobotup-docker-ubu18/shandy-robot-upboard:/root/shandy-robot-upboard --device /dev/ttyUSB0 ubuntu:18.04
-
 ```
