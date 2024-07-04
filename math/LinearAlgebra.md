@@ -52,7 +52,7 @@ $$
 \end{bmatrix}
 $$
 
-![[Diagram.svg]]
+![Diagram.svg](../Diagram.svg)
 
 
 ### 数乘（标量乘法）
@@ -69,6 +69,8 @@ kv_1 \\
 kv_2 \\
 ...
 \end{bmatrix}
+,\quad k 
 $$
 
 ![Diagram1.svg](../Diagram1.svg)
+
