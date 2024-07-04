@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "math/Linear Algebra.md",
+                "file": "math/LinearAlgebra.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "math/Linear Algebra.md",
+                "file": "math/LinearAlgebra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "math/Linear Algebra.md",
+                "file": "math/LinearAlgebra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "math/Linear Algebra.md"
+                "file": "math/LinearAlgebra.md"
               }
             }
           },
@@ -158,7 +158,7 @@
   "lastOpenFiles": [
     "Diagram 1.svg",
     "Diagram.svg",
-    "math/Linear Algebra.md",
+    "math/LinearAlgebra.md",
     "Diagram 1.svg.xml",
     "midwayjs/React Router.md",
     "Diagram.svg.xml",
