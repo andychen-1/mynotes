@@ -18,6 +18,14 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6d09cbba26d4f6ab",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ]
       }
@@ -157,8 +165,8 @@
   "active": "2a676a76ea68392b",
   "lastOpenFiles": [
     "Diagram1.svg",
-    "Diagram.svg",
     "math/LinearAlgebra.md",
+    "Diagram.svg",
     "Diagram1.svg.xml",
     "midwayjs/React Router.md",
     "Diagram.svg.xml",

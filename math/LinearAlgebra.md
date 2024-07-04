@@ -71,4 +71,4 @@ kv_2 \\
 \end{bmatrix}
 $$
 
-![[Diagram1.svg]]
+![Diagram1.svg](../Diagram1.svg)
