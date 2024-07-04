@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "db54448358549cb0",
+        "id": "1e97f34f86c478f9",
         "type": "tabs",
         "children": [
           {
-            "id": "2a676a76ea68392b",
+            "id": "10cf0d61b391d170",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -17,14 +17,6 @@
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "6d09cbba26d4f6ab",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
         ]
@@ -56,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#调用实例",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,10 +154,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2a676a76ea68392b",
+  "active": "10cf0d61b391d170",
   "lastOpenFiles": [
-    "Diagram1.svg",
+    "点乘（内积、数量积）.md",
     "math/LinearAlgebra.md",
+    "加减法.md",
+    "Diagram1.svg",
     "Diagram.svg",
     "Diagram1.svg.xml",
     "midwayjs/React Router.md",
