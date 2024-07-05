@@ -77,7 +77,7 @@ b_2 \\
 \end{bmatrix}
 $$
 
-平面几何意义
+几何意义
 
 ![Diagram.svg](../Diagram.svg)
 
@@ -102,11 +102,11 @@ kv_2 \\
 ,\quad k \in R
 $$
 
-平面几何意义
+几何意义
 
 ![Diagram1.svg](../Diagram1.svg)
 
-###  点乘（内积、数量积）
+###  点乘（内积、数量积、点积）
 
 代数公式
 
@@ -148,7 +148,11 @@ b_n
 \sum_{i=1}^{n}a_ib_i
 $$
 
-平面几何意义
+几何意义
 
 ![Diagram2.svg](../dot_product.svg)
+
+### 叉乘（向量积、外积、叉积）
+
+代数公式
 
