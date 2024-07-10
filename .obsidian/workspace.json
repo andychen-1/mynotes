@@ -142,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 522.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,8 +156,8 @@
   },
   "active": "8d59411f963d9917",
   "lastOpenFiles": [
-    "dot_product.svg",
     "math/LinearAlgebra.md",
+    "dot_product.svg",
     "未确认 705277.crdownload",
     "未确认 711831.crdownload",
     "Diagram2.svg",
