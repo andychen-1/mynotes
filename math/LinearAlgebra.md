@@ -91,13 +91,15 @@ k\vec{v} = k
 \begin{bmatrix}
 v_1 \\ 
 v_2 \\
-\dots
+\dots \\
+v_n
 \end{bmatrix}
 =
 \begin{bmatrix}
 kv_1 \\ 
 kv_2 \\
-\dots
+\dots \\
+kv_n
 \end{bmatrix}
 ,\quad k \in R
 $$
@@ -155,4 +157,7 @@ $$
 ### 叉乘（向量积、外积、叉积）
 
 代数公式
+
+
+
 
