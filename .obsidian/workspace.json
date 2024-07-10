@@ -142,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 522.5
+    "width": 442.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -154,7 +154,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8d59411f963d9917",
+  "active": "0ccb64fcd5acc7bf",
   "lastOpenFiles": [
     "math/LinearAlgebra.md",
     "dot_product.svg",
