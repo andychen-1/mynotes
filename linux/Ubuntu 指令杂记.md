@@ -59,5 +59,5 @@ sudo update-alternatives --config java
 # sudo update-alternatives --install <link> <name> <path> <priority>
 sudo update-alternatives --install /usr/bin/java java /opt/java/.../java 1000
 # 移除替代项
-sudo update-alternatives --remove <name> <path>
+# sudo update-alternatives --remove <name> <path>
 ```
