@@ -1,5 +1,5 @@
 
-## 文件系统
+### 文件系统
 
 ```bash
 # 查看文件夹总大小
@@ -43,4 +43,21 @@ docker run -it --name ubu18_test_gamepad --env DISPLAY=$DISPLAY --volume /tmp/.X
 
 # 创建容器，测试语音控制
 docker run -it --name ubu18_test_gamepad --env DISPLAY=$DISPLAY --volume /tmp/.X11-unix:/tmp/.X11-unix:rw --volume /home/kevin/development/shandyrobotup-docker-ubu18/shandy-robot-upboard:/root/shandy-robot-upboard --device /dev/ttyUSB0 ubuntu:18.04
+```
+
+### JDK
+
+```bash
+# 解压缩至指定的安装目录
+sudo tar -xzf jdk-17_linux-x64_bin.tar.gz -C /opt/java/
+# 显示已注册的组
+# sudo update-alternatives --display <name>
+# 配置一个替代选项
+# sudo update-alternatives --config <name>
+sudo update-alternatives --config java
+# 设置一个 java 替代项 
+# sudo update-alternatives --install <link> <name> <path> <priority>
+sudo update-alternatives --install /usr/bin/java java /opt/java/.../java 1000
+# 移除替代项
+sudo update-alternatives --remove <name> <path>
 ```

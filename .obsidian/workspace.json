@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "math/LinearAlgebra.md",
+                "file": "linux/Ubuntu 指令杂记.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "math/LinearAlgebra.md",
+                "file": "linux/Ubuntu 指令杂记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "math/LinearAlgebra.md",
+                "file": "linux/Ubuntu 指令杂记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "math/LinearAlgebra.md"
+                "file": "linux/Ubuntu 指令杂记.md"
               }
             }
           },
@@ -157,13 +157,14 @@
   "active": "8d59411f963d9917",
   "lastOpenFiles": [
     "dot_product.svg",
+    "Diagram2.svg",
+    "Diagram1.svg",
+    "Diagram.svg",
+    "linux/Ubuntu 指令杂记.md",
     "math/LinearAlgebra.md",
     "未确认 705277.crdownload",
     "未确认 711831.crdownload",
-    "Diagram2.svg",
     "未确认 26027.crdownload",
-    "Diagram1.svg",
-    "Diagram.svg",
     "Diagram2.svg.xml",
     "点乘（内积、数量积）.md",
     "加减法.md",
@@ -171,7 +172,6 @@
     "midwayjs/React Router.md",
     "Diagram.svg.xml",
     "未命名.canvas",
-    "linux/Ubuntu 指令杂记.md",
     "math",
     "未命名.md",
     "linux",
