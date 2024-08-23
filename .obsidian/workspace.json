@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "13a5f85e017540ec",
+        "id": "35c830d9bc7f274b",
         "type": "tabs",
         "children": [
           {
-            "id": "8d59411f963d9917",
+            "id": "c6a45dd282776d37",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -154,14 +154,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8d59411f963d9917",
+  "active": "c6a45dd282776d37",
   "lastOpenFiles": [
+    "linux/Ubuntu 指令杂记.md",
+    "math/LinearAlgebra.md",
+    "cheetah/CHAMP - Robot SLAM.md",
+    "conflict-files-obsidian-git.md",
     "dot_product.svg",
     "Diagram2.svg",
     "Diagram1.svg",
     "Diagram.svg",
-    "linux/Ubuntu 指令杂记.md",
-    "math/LinearAlgebra.md",
     "未确认 705277.crdownload",
     "未确认 711831.crdownload",
     "未确认 26027.crdownload",
@@ -182,7 +184,6 @@
     "cheetah/orb_slam3.md",
     "cheetah/legged_gym.md",
     "cheetah/Doxygen.md",
-    "cheetah/CHAMP - Robot SLAM.md",
     "cheetah/GPT 问答.md",
     "gpt-mpc-wbc/未命名.md",
     "gpt-mpc-wbc",
