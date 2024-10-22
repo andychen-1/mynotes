@@ -1,17 +1,25 @@
 
 ## 使用 vcpkg 安装 ffmpeg 并支持交叉编译
 
+
 ```bash
 # 安装 vcpkg
 git clone https://github.com/microsoft/vcpkg.git
 cd vcpkg
 ./bootstrap-vcpkg.sh
-# 在 .bashrc 中配置 vcpkg
+```
+
+```bash
+# ~/.bashrc
 export VCPKG_ROOT=$HOME/vcpkg
 export PATH=$PATH:$VCPKG_ROOT
+# cmake -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
 export CMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
+```
+
+```bash
 # 同步配置
-source .bashrc
+source ~/.bashrc
 # ffmpeg:x64-linux
 vcpkg install ffmpeg
 # 安装 arm64 编译器
@@ -20,6 +28,29 @@ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 vcpkg install ffmpeg:arm64-linux
 ```
 
+**如果当前项目使用cmake 构建，vcpkg 则能很好地整合 cmake 编译环境**
+
+```cmake
+cmake_minimum_required(VERSION 3.10)
+
+project(MyProject)
+
+# 调试模式
+set(CMAKE_CXX_FLAGS_DEBUG "-g")
+# 查看 cmake 环境配置
+message(STATUS "${CMAKE_PREFIX_PATH}")
+
+# 在使用 vcpkg 环境时，必须配置CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
+# 查找包 （目标名称对应 Find<TargetName>.cmake， 例如 FFMPEG => FindFFMPEG.cmake）
+find_package(FFMPEG REQUIRED)
+
+add_executable(MyProject src/main.cpp)
+
+# 链接目标在添加可执行文件之后
+target_include_directories(MyProject PRIVATE ${FFMPEG_INCLUDE_DIRS})
+target_link_directories(MyProject PRIVATE ${FFMPEG_LIBRARY_DIRS})
+target_link_libraries(MyProject PRIVATE ${FFMPEG_LIBRARIES} avcodec avformat avutil)
+```
 
 ## 摄像头推流
 
@@ -59,7 +90,6 @@ worker_processes  1;
 #error_log  logs/error.log  info;
 
 #pid        logs/nginx.pid;
-
 
 events {
     worker_connections  1024;
