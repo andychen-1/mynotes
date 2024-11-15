@@ -77,6 +77,8 @@ hciconfig hci0 name "激光雷达界址仪"
 exit 0
 ###################################
 # CTRL + S, CTRL + X 退出 nano
+# 赋予执行权限
+sudo chmod +x /etc/rc.local
 # 编辑服务脚本
 sudo nano /etc/systemd/system/rc-local.service
 # 输入以下内容
@@ -101,3 +103,29 @@ sudo systemctl enable rc-local.service
 # 启动服务
 sudo systemctl start rc-local.service
 ```
+
+
+## 构建 Qt5 开源项目并使 QtBluetooth 模块有效可用
+
+```bash
+# 安装 bluez 开发包，在 Linux 上，BlueZ 是标准的蓝牙协议栈
+# 而 pkg-config则是一个用于管理和配置编译时依赖的工具
+# libdbus-1-dev 是 D-Bus (进程间消息总线) 开发包，默认应该是有的，这里以防万一
+sudo apt-get install pkg-config libbluetooth-dev libdbus-1-dev
+# 验证一下 bluz 安装是否有效，如果有效则执行下一步：构建编译 Qt 源码包
+pkg-config --cflags --libs bluez
+# 下载 qt5 开发包
+wget https://ftp.jaist.ac.jp/pub/qtproject/archive/qt/5.15/5.15.2/single/qt-everywhere-src-5.15.2.tar.xz
+# 解压 .tar.xz 文件。.tar.xz 提供了相对高的文件压缩比率，
+# 但无论压缩还是解压都会较慢，如果存储优先，这是一个不错的选择
+tar -xf qt-everywhere-src-5.15.2.tar.xz
+cd qt-everywhere-src-5.15.2
+# 构建 qt5，当你在 arm64 环境下开发或需要交叉编译的时候才需要用 qt 源码来构建编译开发工具
+# 反之，可以下载二进制安装包或使用在线安装器安装 qt 的最新版本
+# CXXFLAGS="-I/usr/include" 当你魔怔了，可以把这一句放在开头，但效果其实一样
+./configure -prefix /opt/qt5.15.2 -opensource -confirm-license -release -nomake examples -nomake tests
+```
+
+
+
+

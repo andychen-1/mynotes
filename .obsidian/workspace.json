@@ -4,20 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "8db42dc8b585c8d2",
+        "id": "7b373c244abee121",
         "type": "tabs",
         "children": [
           {
-            "id": "bda449df7144ec1f",
+            "id": "a6ce24621ba99ca4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Qt/Qt 6 On Ubuntu22.04.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Qt 6 On Ubuntu22.04"
+            }
+          },
+          {
+            "id": "4791c4631a520df4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Qt/Qt 6 On Ubuntu22.04.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Qt 6 On Ubuntu22.04"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -73,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 371.500732421875
+    "width": 367.500732421875
   },
   "right": {
     "id": "e3f998aeec958431",
@@ -164,24 +183,24 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bda449df7144ec1f",
+  "active": "4791c4631a520df4",
   "lastOpenFiles": [
-    "Qt/Qt 6 On Ubuntu22.04.md",
-    "QT_QML_GENERATE_QMLLS_INI.png",
-    "android/Android Studio On Linux.md",
-    "dot_product.svg",
-    "Diagram1.svg",
     "Diagram.svg",
-    "Diagram2.svg",
-    "cheetah/CHAMP - Robot SLAM.md",
     "midwayjs/React Router.md",
     "midwayjs/Passport.md",
-    "midwayjs/MongoDB.md",
     "midwayjs/MySql.md",
-    "linux/Ubuntu 指令杂记.md",
-    "android/ffmpeg.md",
-    "android",
+    "midwayjs/MongoDB.md",
     "math/LinearAlgebra.md",
+    "linux/Ubuntu 指令杂记.md",
+    "Qt/Qt 6 On Ubuntu22.04.md",
+    "android/ffmpeg.md",
+    "android/Android Studio On Linux.md",
+    "QT_QML_GENERATE_QMLLS_INI.png",
+    "dot_product.svg",
+    "Diagram1.svg",
+    "Diagram2.svg",
+    "cheetah/CHAMP - Robot SLAM.md",
+    "android",
     "Qt",
     "conflict-files-obsidian-git.md",
     "未确认 705277.crdownload",
