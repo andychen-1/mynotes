@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "7b373c244abee121",
+        "id": "065f31fce2798312",
         "type": "tabs",
         "children": [
           {
-            "id": "a6ce24621ba99ca4",
+            "id": "806dc938c608a101",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Qt/Qt 6 On Ubuntu22.04.md",
+                "file": "android/ffmpeg.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Qt 6 On Ubuntu22.04"
-            }
-          },
-          {
-            "id": "4791c4631a520df4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Qt/Qt 6 On Ubuntu22.04.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Qt 6 On Ubuntu22.04"
+              "title": "ffmpeg"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 367.500732421875
+    "width": 243.500732421875
   },
   "right": {
     "id": "e3f998aeec958431",
@@ -171,7 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 252.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,19 +168,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4791c4631a520df4",
+  "active": "806dc938c608a101",
   "lastOpenFiles": [
+    "Qt/Qt 6 On Ubuntu22.04.md",
+    "android/ffmpeg.md",
+    "math/LinearAlgebra.md",
+    "linux/Ubuntu 指令杂记.md",
+    "QT_QML_GENERATE_QMLLS_INI.png",
     "Diagram.svg",
     "midwayjs/React Router.md",
     "midwayjs/Passport.md",
     "midwayjs/MySql.md",
     "midwayjs/MongoDB.md",
-    "math/LinearAlgebra.md",
-    "linux/Ubuntu 指令杂记.md",
-    "Qt/Qt 6 On Ubuntu22.04.md",
-    "android/ffmpeg.md",
     "android/Android Studio On Linux.md",
-    "QT_QML_GENERATE_QMLLS_INI.png",
     "dot_product.svg",
     "Diagram1.svg",
     "Diagram2.svg",
