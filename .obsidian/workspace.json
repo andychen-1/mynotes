@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "ffmpeg"
             }
+          },
+          {
+            "id": "3bc1a9d7f60056dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "android/ffmpeg.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ffmpeg"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,23 +183,29 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "806dc938c608a101",
+  "active": "3bc1a9d7f60056dc",
   "lastOpenFiles": [
-    "Qt/Qt 6 On Ubuntu22.04.md",
-    "android/ffmpeg.md",
-    "math/LinearAlgebra.md",
     "linux/Ubuntu 指令杂记.md",
-    "QT_QML_GENERATE_QMLLS_INI.png",
+    "android/ffmpeg.md",
+    "lidar/Livox Horizon.md",
+    "cheetah/orb_slam3.md",
+    "cheetah/MIT_cheetah Notes.md",
+    "cheetah/legged_gym.md",
+    "cheetah/Doxygen.md",
+    "cheetah/CHAMP - Robot SLAM.md",
+    "android/Android Studio On Linux.md",
+    "dot_product.svg",
+    "Diagram2.svg",
+    "Diagram1.svg",
     "Diagram.svg",
+    "QT_QML_GENERATE_QMLLS_INI.png",
+    "lidar",
+    "Qt/Qt 6 On Ubuntu22.04.md",
+    "math/LinearAlgebra.md",
     "midwayjs/React Router.md",
     "midwayjs/Passport.md",
     "midwayjs/MySql.md",
     "midwayjs/MongoDB.md",
-    "android/Android Studio On Linux.md",
-    "dot_product.svg",
-    "Diagram1.svg",
-    "Diagram2.svg",
-    "cheetah/CHAMP - Robot SLAM.md",
     "android",
     "Qt",
     "conflict-files-obsidian-git.md",
@@ -198,12 +219,7 @@
     "Diagram.svg.xml",
     "未命名.canvas",
     "math",
-    "linux",
-    "cheetah/MIT_cheetah Notes.md",
     "midwayjs/mongodb.md",
-    "cheetah/orb_slam3.md",
-    "cheetah/legged_gym.md",
-    "cheetah/Doxygen.md",
     "cheetah/GPT 问答.md",
     "gpt-mpc-wbc/未命名.md",
     "middleware.md",
