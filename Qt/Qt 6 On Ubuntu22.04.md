@@ -125,6 +125,11 @@ cd qt-everywhere-src-5.15.2
 ./configure -prefix /opt/qt5.15.2 -opensource -confirm-license -release -nomake examples -nomake tests
 ```
 
+## 创建桌面快捷方式
 
+```bash
+# 查找列出收藏栏中的 .desktop 文件名
+gsettings get org.gnome.shell favorite-apps
 
+```
 

@@ -63,7 +63,6 @@ $ sudo reboot
 # 如果重启后进入系统时出现黑屏，可按 <Ctrl> + <Alt> + F3 进入 tty 交互模式，然后按 <Ctrl> + <Alt> + F1 重新进入桌面模式
 # 也可以再次重启，在 BIOS 中选择 “独显模式”（各个厂商的设置可能不尽相同，依据实际情况而定）
 
-  
 # 查看驱动信息以及对应的 NVIDIA CUDA TOOLKIT 版本
 $ nvidia-smi
 

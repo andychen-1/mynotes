@@ -141,7 +141,8 @@ sudo apt install ffmpeg
 ffmpeg -f v4l2 -i /dev/video0 -vcodec libx264 -tune zerolatency -preset ultrafast -f flv rtmp://localhost/live/stream
 # 使用 ffplay 播放 rtmp （无缓冲，低延时）
 ffplay -fflags nobuffer -flags low_delay -analyzeduration 0 rtmp://localhost/live/stream
-
+# 查看摄像头设备信息
+v4l2-ctl --list-devices
 # 摄像头推流 1
 ffmpeg -f v4l2 -i /dev/video2 -video_size 640x480 -framerate 20 -f flv rtmp://localhost/live/stream
 # 摄像头推流 2
