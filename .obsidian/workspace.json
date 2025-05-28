@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "065f31fce2798312",
+        "id": "2fef05a3ef2fe8e7",
         "type": "tabs",
         "children": [
           {
-            "id": "f118a4d8b407ec7d",
+            "id": "dd1403d9a3370343",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Qt/Qt 6 On Ubuntu22.04.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Qt 6 On Ubuntu22.04"
+              "title": "新标签页"
             }
           }
         ]
@@ -169,23 +165,25 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f118a4d8b407ec7d",
+  "active": "dd1403d9a3370343",
   "lastOpenFiles": [
+    "android/ffmpeg.md",
     "linux/Ubuntu 指令杂记.md",
     "Qt/Qt 6 On Ubuntu22.04.md",
+    "未命名.md",
+    "vcpkg 构建交叉编译环境",
+    "cheetah/orb_slam3.md",
+    "cheetah/MIT_cheetah Notes.md",
+    "android/Android Studio On Linux.md",
+    "cheetah/CHAMP - Robot SLAM.md",
+    "lidar/Livox Horizon.md",
+    "cheetah/legged_gym.md",
+    "math/LinearAlgebra.md",
+    "cheetah/Doxygen.md",
     "midwayjs/React Router.md",
     "midwayjs/Passport.md",
     "midwayjs/MySql.md",
     "midwayjs/MongoDB.md",
-    "math/LinearAlgebra.md",
-    "lidar/Livox Horizon.md",
-    "cheetah/orb_slam3.md",
-    "cheetah/MIT_cheetah Notes.md",
-    "cheetah/CHAMP - Robot SLAM.md",
-    "cheetah/legged_gym.md",
-    "cheetah/Doxygen.md",
-    "android/ffmpeg.md",
-    "android/Android Studio On Linux.md",
     "技术开发中心周例会会议纪要.md",
     "dot_product.svg",
     "Diagram2.svg",
@@ -205,13 +203,10 @@
     "Diagram1.svg.xml",
     "Diagram.svg.xml",
     "未命名.canvas",
-    "math",
     "midwayjs/mongodb.md",
     "cheetah/GPT 问答.md",
     "gpt-mpc-wbc/未命名.md",
     "middleware.md",
-    "2023-10-24.md",
-    "midwayjs/配置.md",
-    "midwayjs/概要.md"
+    "2023-10-24.md"
   ]
 }
