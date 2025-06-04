@@ -6,7 +6,10 @@
 
 ```bash
 # 使用 fcitx5 替换默认的 iBus 键盘输入法系统
-sudo apt install fcitx5
+sudo apt install fcitx5 \
+fcitx5-chinese-addons \
+fcitx5-frontend-gtk4 fcitx5-frontend-gtk3 fcitx5-frontend-gtk2 \
+fcitx5-frontend-qt5
 
 # 使用 Qt 的在线安装器安装的Qt会出现中问输入法不可用的情况
 # 目前可靠的解决方案就是编译安装 qt5/qt6 fcitx5-qt 插件来解决问题
