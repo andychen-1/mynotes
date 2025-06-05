@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Qt/Qt 6 On Ubuntu22.04.md",
+                "file": "android/Android Studio On Linux.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Qt 6 On Ubuntu22.04"
+              "title": "Android Studio On Linux"
             }
           }
         ]
@@ -171,9 +171,13 @@
   },
   "active": "dd1403d9a3370343",
   "lastOpenFiles": [
-    "linux/Ubuntu 指令杂记.md",
-    "android/ffmpeg.md",
     "Qt/Qt 6 On Ubuntu22.04.md",
+    "math/LinearAlgebra.md",
+    "linux/Ubuntu 指令杂记.md",
+    "midwayjs/MySql.md",
+    "midwayjs/Passport.md",
+    "midwayjs/React Router.md",
+    "android/ffmpeg.md",
     "未命名.md",
     "vcpkg 构建交叉编译环境",
     "cheetah/orb_slam3.md",
@@ -182,11 +186,7 @@
     "cheetah/CHAMP - Robot SLAM.md",
     "lidar/Livox Horizon.md",
     "cheetah/legged_gym.md",
-    "math/LinearAlgebra.md",
     "cheetah/Doxygen.md",
-    "midwayjs/React Router.md",
-    "midwayjs/Passport.md",
-    "midwayjs/MySql.md",
     "midwayjs/MongoDB.md",
     "技术开发中心周例会会议纪要.md",
     "dot_product.svg",
