@@ -28,9 +28,9 @@ cd fcitx5-qt && mkdir build && cd build
 cmake -DCMAKE_PREFIX_PATH=/opt/Qt/6.7.2/gcc_64 ..
 make -j8
 # 当前 build 目录下，复制编译后的 .so 文件到指定的 Qt 插件目录，包括 QtCreator 
-sudo cp qt6/platforminputcontext/libfcitx5platforminputcontextplugin.so \ /opt/Qt/6.7.2/gcc_64/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
+sudo cp ~/fcitx5-qt/build/qt6/platforminputcontext/libfcitx5platforminputcontextplugin.so  /opt/Qt/6.8.0/gcc_64/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
 
-sudo cp qt6/platforminputcontext/libfcitx5platforminputcontextplugin.so \ /opt/Qt/Tools/QtCreator/lib/Qt/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
+sudo cp ~/fcitx5-qt/build/qt6/platforminputcontext/libfcitx5platforminputcontextplugin.so /opt/Qt/Tools/QtCreator/lib/Qt/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so
 # 重新打开 qtcreator，在 Ubuntu 中一般单击 Qt Creator 的桌面图标即可
 # 如果需要在命令行中执行，则可能需要先为 Qt Creator 创建一个指向系统路径的软链接
 # ln -s /opt/Qt/Tools/QtCreator/bin/qtcreator /usr/bin/qtcreator
@@ -136,3 +136,28 @@ gsettings get org.gnome.shell favorite-apps
 
 ```
 
+## 使用 apt 安装 qt5，以解决 QVulkanInstance 初始化错误 
+
+```bash
+#!/bin/bash
+# Install Qt 5 and required modules/extensions for LidarMapTest project
+
+sudo apt update
+sudo apt install -y qtbase5-dev qt5-qmake \
+qtdeclarative5-dev qml-module-qtquick2 qml-module-qtquick-controls2 qml-module-qtquick-layouts qt5-qmltooling-plugins \
+libqt5serialport5-dev qtconnectivity5-dev libbluetooth-dev \
+libgl1-mesa-dev libfontconfig1-dev libfreetype6-dev libx11-dev libxext-dev libxrender-dev libudev-dev \
+build-essential g++ gdb
+
+# Add user to dialout group for SerialPort
+sudo usermod -a -G dialout $USER
+
+# Verify installations
+echo "Qt version:"
+/usr/bin/qmake --version
+echo "Installed Qt modules:"
+pkg-config --modversion Qt5Core Qt5Gui Qt5Qml Qt5Quick Qt5SerialPort Qt5Bluetooth
+echo "QML utilities:"
+
+ls /usr/lib/qt5/bin | grep -E 'qmlscene|qmlplugindump'
+```

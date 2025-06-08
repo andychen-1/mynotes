@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "android/Android Studio On Linux.md",
+                "file": "Qt/Qt 6 On Ubuntu22.04.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Android Studio On Linux"
+              "title": "Qt 6 On Ubuntu22.04"
             }
           }
         ]
@@ -157,7 +157,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 222.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,6 +171,7 @@
   },
   "active": "dd1403d9a3370343",
   "lastOpenFiles": [
+    "android/Android Studio On Linux.md",
     "Qt/Qt 6 On Ubuntu22.04.md",
     "math/LinearAlgebra.md",
     "linux/Ubuntu 指令杂记.md",
@@ -182,7 +183,6 @@
     "vcpkg 构建交叉编译环境",
     "cheetah/orb_slam3.md",
     "cheetah/MIT_cheetah Notes.md",
-    "android/Android Studio On Linux.md",
     "cheetah/CHAMP - Robot SLAM.md",
     "lidar/Livox Horizon.md",
     "cheetah/legged_gym.md",
