@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "24d931d9eea3cf3e",
+        "id": "1370385d57ac3c12",
         "type": "tabs",
         "children": [
           {
-            "id": "31d0d2f863334731",
+            "id": "902215cefdb8fe30",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/Ubuntu 指令杂记.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Ubuntu 指令杂记"
+              "title": "新标签页"
             }
           }
         ]
@@ -74,11 +70,12 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 324.500732421875
+    "width": 200
   },
   "right": {
     "id": "e3f998aeec958431",
@@ -112,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "linksCollapsed": false,
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
@@ -137,7 +134,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-list",
               "title": "大纲"
             }
@@ -157,10 +158,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 222.5
+    "width": 342.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -169,27 +171,39 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "31d0d2f863334731",
+  "active": "902215cefdb8fe30",
   "lastOpenFiles": [
-    "Qt/Qt 6 On Ubuntu22.04.md",
+    "未命名 3.base",
+    "git/设置ssh 证书登陆.md",
+    "git/导入自定义证书解决 git 仓库https访问时的证书验证失败.md",
     "android/ffmpeg.md",
-    "android/Android Studio On Linux.md",
-    "linux/Ubuntu 指令杂记.md",
-    "智能装备研发团队人员配置方案.md",
+    "git/修改git远程仓库地址.md",
+    "未命名 2.base",
+    "git",
+    "GGA 报文解析以及坐标系转换参考.md",
+    "定位测量仪设备终端通信协议.md",
+    "GNSS 北斗星基增强定位测量仪 设备终端通信协议 草稿.md",
+    "未命名 1.base",
+    "未命名.base",
+    "使用 Python Kivy 搭建移动端开发环境.md",
+    "如何在 ubuntu20.04 amd64 上搭建 arm64 交叉编译环境.md",
     "高光谱相机数据处理与应用开发C++高级程序员招聘需求.md",
-    "math/LinearAlgebra.md",
-    "midwayjs/MySql.md",
-    "midwayjs/Passport.md",
+    "QML Material 主题颜色的修改.md",
+    "gitlab 新地址访问方法.md",
+    "Qt/Qt 6 On Ubuntu22.04.md",
     "midwayjs/React Router.md",
+    "midwayjs/Passport.md",
+    "midwayjs/MySql.md",
+    "midwayjs/MongoDB.md",
+    "math/LinearAlgebra.md",
+    "linux/Ubuntu 指令杂记.md",
+    "RTK手薄中，点测量，点放样以及线放样等功能的操作以及作用.md",
+    "lidar/Livox Horizon.md",
+    "android/Android Studio On Linux.md",
+    "智能装备研发团队人员配置方案.md",
     "vcpkg 构建交叉编译环境",
     "cheetah/orb_slam3.md",
     "cheetah/MIT_cheetah Notes.md",
-    "cheetah/CHAMP - Robot SLAM.md",
-    "lidar/Livox Horizon.md",
-    "cheetah/legged_gym.md",
-    "cheetah/Doxygen.md",
-    "midwayjs/MongoDB.md",
-    "技术开发中心周例会会议纪要.md",
     "dot_product.svg",
     "Diagram2.svg",
     "Diagram1.svg",
@@ -198,20 +212,8 @@
     "lidar",
     "android",
     "Qt",
-    "conflict-files-obsidian-git.md",
     "未确认 705277.crdownload",
     "未确认 711831.crdownload",
-    "未确认 26027.crdownload",
-    "Diagram2.svg.xml",
-    "点乘（内积、数量积）.md",
-    "加减法.md",
-    "Diagram1.svg.xml",
-    "Diagram.svg.xml",
-    "未命名.canvas",
-    "midwayjs/mongodb.md",
-    "cheetah/GPT 问答.md",
-    "gpt-mpc-wbc/未命名.md",
-    "middleware.md",
-    "2023-10-24.md"
+    "未命名.canvas"
   ]
 }
