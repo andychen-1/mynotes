@@ -4,17 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "1370385d57ac3c12",
+        "id": "834b7b60ccc30235",
         "type": "tabs",
         "children": [
           {
-            "id": "902215cefdb8fe30",
+            "id": "4cb230ed8d9652db",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "bases",
+              "state": {
+                "file": "索引.base",
+                "viewName": "表格"
+              },
+              "icon": "lucide-table",
+              "title": "索引"
             }
           }
         ]
@@ -70,8 +73,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -109,11 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "索引.base",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "索引 的出链列表"
             }
           },
           {
@@ -135,12 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "索引.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "索引 的大纲"
             }
           },
           {
@@ -171,20 +175,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "902215cefdb8fe30",
+  "active": "ed2fddd10e618346",
   "lastOpenFiles": [
+    "未命名 1.base",
+    "索引.base",
+    "未命名 2.base",
+    "未命名 4.base",
+    "定位测量仪设备终端通信协议.md",
     "未命名 3.base",
     "git/设置ssh 证书登陆.md",
     "git/导入自定义证书解决 git 仓库https访问时的证书验证失败.md",
     "android/ffmpeg.md",
     "git/修改git远程仓库地址.md",
-    "未命名 2.base",
     "git",
     "GGA 报文解析以及坐标系转换参考.md",
-    "定位测量仪设备终端通信协议.md",
     "GNSS 北斗星基增强定位测量仪 设备终端通信协议 草稿.md",
-    "未命名 1.base",
-    "未命名.base",
     "使用 Python Kivy 搭建移动端开发环境.md",
     "如何在 ubuntu20.04 amd64 上搭建 arm64 交叉编译环境.md",
     "高光谱相机数据处理与应用开发C++高级程序员招聘需求.md",
@@ -212,8 +217,6 @@
     "lidar",
     "android",
     "Qt",
-    "未确认 705277.crdownload",
-    "未确认 711831.crdownload",
     "未命名.canvas"
   ]
 }
