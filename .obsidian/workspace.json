@@ -4,20 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "834b7b60ccc30235",
+        "id": "2200d182b1cb618d",
         "type": "tabs",
         "children": [
           {
-            "id": "4cb230ed8d9652db",
+            "id": "3f411575bf9b773f",
             "type": "leaf",
             "state": {
-              "type": "bases",
-              "state": {
-                "file": "索引.base",
-                "viewName": "表格"
-              },
-              "icon": "lucide-table",
-              "title": "索引"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -77,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 301.500732421875
   },
   "right": {
     "id": "e3f998aeec958431",
@@ -138,13 +135,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "索引.base",
+                "file": "Ubuntu 22.04 amd64 搭建雷达相机标定程序运行环境.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "索引 的大纲"
+              "title": "Ubuntu 22.04 amd64 搭建雷达相机标定程序运行环境 的大纲"
             }
           },
           {
@@ -166,7 +163,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -175,48 +172,48 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ed2fddd10e618346",
+  "active": "0ccb64fcd5acc7bf",
   "lastOpenFiles": [
-    "未命名 1.base",
-    "索引.base",
-    "未命名 2.base",
-    "未命名 4.base",
-    "定位测量仪设备终端通信协议.md",
     "未命名 3.base",
-    "git/设置ssh 证书登陆.md",
-    "git/导入自定义证书解决 git 仓库https访问时的证书验证失败.md",
+    "未命名 2.base",
     "android/ffmpeg.md",
-    "git/修改git远程仓库地址.md",
-    "git",
-    "GGA 报文解析以及坐标系转换参考.md",
-    "GNSS 北斗星基增强定位测量仪 设备终端通信协议 草稿.md",
-    "使用 Python Kivy 搭建移动端开发环境.md",
-    "如何在 ubuntu20.04 amd64 上搭建 arm64 交叉编译环境.md",
-    "高光谱相机数据处理与应用开发C++高级程序员招聘需求.md",
+    "PWA 设置图标.md",
     "QML Material 主题颜色的修改.md",
-    "gitlab 新地址访问方法.md",
-    "Qt/Qt 6 On Ubuntu22.04.md",
-    "midwayjs/React Router.md",
-    "midwayjs/Passport.md",
-    "midwayjs/MySql.md",
-    "midwayjs/MongoDB.md",
-    "math/LinearAlgebra.md",
+    "Ubuntu 22.04 amd64 搭建雷达相机标定程序运行环境.md",
+    "cheetah/orb_slam3.md",
+    "cheetah/legged_gym.md",
+    "cheetah/Doxygen.md",
+    "cheetah/CHAMP - Robot SLAM.md",
+    "android/Android Studio On Linux.md",
     "linux/Ubuntu 指令杂记.md",
     "RTK手薄中，点测量，点放样以及线放样等功能的操作以及作用.md",
+    "QT_QML_GENERATE_QMLLS_INI.png",
+    "Livox LidarExtrinsic.md",
+    "未命名 1.base",
+    "未命名.base",
+    "如何在 ubuntu20.04 amd64 上搭建 arm64 交叉编译环境.md",
+    "电子界址仪项目优化与验证工作计划.md",
+    "git/导入自定义证书解决 git 仓库https访问时的证书验证失败.md",
+    "git/修改git远程仓库地址.md",
     "lidar/Livox Horizon.md",
-    "android/Android Studio On Linux.md",
-    "智能装备研发团队人员配置方案.md",
-    "vcpkg 构建交叉编译环境",
-    "cheetah/orb_slam3.md",
-    "cheetah/MIT_cheetah Notes.md",
+    "math/LinearAlgebra.md",
+    "GNSS 北斗星基增强定位测量仪 设备终端通信协议 草稿.md",
+    "控制点与快速点经纬度对比.md",
+    "高光谱相机数据处理与应用开发C++高级程序员招聘需求.md",
+    "定位测量仪设备终端通信协议.md",
+    "底层设备访问的应用授权过程.md",
+    "Qt/Qt 6 On Ubuntu22.04.md",
+    "索引.base",
+    "使用 Python Kivy 搭建移动端开发环境.md",
     "dot_product.svg",
+    "未命名 4.base",
+    "git",
+    "vcpkg 构建交叉编译环境",
     "Diagram2.svg",
     "Diagram1.svg",
     "Diagram.svg",
-    "QT_QML_GENERATE_QMLLS_INI.png",
     "lidar",
     "android",
-    "Qt",
     "未命名.canvas"
   ]
 }

@@ -147,6 +147,9 @@ v4l2-ctl --list-devices
 ffmpeg -f v4l2 -i /dev/video2 -video_size 640x480 -framerate 20 -f flv rtmp://localhost/live/stream
 # 摄像头推流 2
 ffmpeg -f v4l2 -video_size 640x480 -i /dev/video2 -framerate 20 -c:v libx264 -preset ultrafast -tune zerolatency -pix_fmt yuv420p -b:v 500k -r 20 -f flv rtmp://localhost/live/stream
+# 摄像头推流 3
+ffmpeg -f v4l2 -input_format yuyv422 -framerate 20 -video_size 640x480 -i /dev/video0 -c:v libx264 -preset ultrafast -tune zerolatency -pix_fmt yuv420p -b:v 500k -r 20 -f flv rtmp://localhost/live/stream
+
 # 叠加滤镜
 ffmpeg -f v4l2 -input_format mjpeg -video_size 1920x1080 -framerate 30 -i "/dev/video0"   -i "watermark_1920x1080.png"   -filter_complex "[1:v]format=rgba,colorkey=0x000000:0.01:0.0[a];[0:v][a]overlay=0:0,format=yuv420p[vout]"   -map "[vout]"   -c:v libx264 -preset ultrafast -tune zerolatency -pix_fmt yuv420p -b:v 5000k -r 30   -an   -f flv "rtmp://localhost/live/stream"
 ```
@@ -260,4 +263,12 @@ echo "可用的 opencv 库位于: /home/$USER/vcpkg/installed/arm64-linux"
 echo "交叉编译工具链: aarch64-linux-gnu-gcc, aarch64-linux-gnu-g++"
 
 exit 0
+```
+
+
+
+```bash
+# 重新载入服务脚本
+systemctl daemon-reload
+
 ```
