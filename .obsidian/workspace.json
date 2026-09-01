@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "28e700145e7221b0",
+        "id": "ffdefac0a7368c12",
         "type": "tabs",
         "children": [
           {
-            "id": "8567797f712fa37e",
+            "id": "835765c73208ff2c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "如何在 ubuntu20.04 amd64 上搭建 arm64 交叉编译环境.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "如何在 ubuntu20.04 amd64 上搭建 arm64 交叉编译环境"
             }
           }
         ]
@@ -37,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -74,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.500732421875
+    "width": 200
   },
   "right": {
     "id": "e3f998aeec958431",
@@ -159,7 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 342.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,14 +178,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8567797f712fa37e",
+  "active": "835765c73208ff2c",
   "lastOpenFiles": [
+    "控制点与快速点经纬度对比.md",
+    "高光谱相机数据处理与应用开发C++高级程序员招聘需求.md",
+    "定位测量仪设备终端通信协议.md",
+    "电子界址仪项目优化与验证工作计划.md",
+    "底层设备访问的应用授权过程.md",
+    "pc3d_desktop.md",
+    "USB 不识别排查方法.md",
+    "未命名.base",
+    "android/ffmpeg.md",
     "claude/GNSS、IMU和磁力计数据融合方案选择.md",
     "claude/claude obsidian从零开始搭建第二大脑.md",
     "claude",
     "未命名 3.base",
     "未命名 2.base",
-    "android/ffmpeg.md",
     "PWA 设置图标.md",
     "QML Material 主题颜色的修改.md",
     "Ubuntu 22.04 amd64 搭建雷达相机标定程序运行环境.md",
@@ -193,19 +207,11 @@
     "QT_QML_GENERATE_QMLLS_INI.png",
     "Livox LidarExtrinsic.md",
     "未命名 1.base",
-    "未命名.base",
     "如何在 ubuntu20.04 amd64 上搭建 arm64 交叉编译环境.md",
-    "电子界址仪项目优化与验证工作计划.md",
     "git/导入自定义证书解决 git 仓库https访问时的证书验证失败.md",
     "git/修改git远程仓库地址.md",
     "lidar/Livox Horizon.md",
     "math/LinearAlgebra.md",
-    "GNSS 北斗星基增强定位测量仪 设备终端通信协议 草稿.md",
-    "控制点与快速点经纬度对比.md",
-    "高光谱相机数据处理与应用开发C++高级程序员招聘需求.md",
-    "定位测量仪设备终端通信协议.md",
-    "底层设备访问的应用授权过程.md",
-    "Qt/Qt 6 On Ubuntu22.04.md",
     "索引.base",
     "dot_product.svg",
     "未命名 4.base",
