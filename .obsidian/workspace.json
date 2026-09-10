@@ -25,14 +25,13 @@
             "id": "9a12f4cd557cae58",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "倾角与基线标定方案.md",
-                "mode": "source",
-                "source": false
+                "file": ".obsidian/workspace.json",
+                "staged": true
               },
-              "icon": "lucide-file",
-              "title": "倾角与基线标定方案"
+              "icon": "git-pull-request",
+              "title": "Diff View (workspace.json)"
             }
           }
         ],
@@ -195,10 +194,10 @@
   },
   "active": "9a12f4cd557cae58",
   "lastOpenFiles": [
+    "倾角与基线标定方案.md",
     "pc3d_desktop.md",
     "PWA 设置图标.md",
     "未命名.base",
-    "倾角与基线标定方案.md",
     "Livox LidarExtrinsic.md",
     "如何在 ubuntu20.04 amd64 上搭建 arm64 交叉编译环境.md",
     "控制点与快速点经纬度对比.md",
