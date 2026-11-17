@@ -13,29 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Livox LidarExtrinsic.md",
+                "file": "pc3d_desktop_docs/windows_handoff_2026-11-18.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Livox LidarExtrinsic"
-            }
-          },
-          {
-            "id": "9a12f4cd557cae58",
-            "type": "leaf",
-            "state": {
-              "type": "diff-view",
-              "state": {
-                "file": ".obsidian/workspace.json",
-                "staged": true
-              },
-              "icon": "git-pull-request",
-              "title": "Diff View (workspace.json)"
+              "title": "windows_handoff_2026-11-18"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -192,39 +178,42 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "9a12f4cd557cae58",
+  "active": "0ccb64fcd5acc7bf",
   "lastOpenFiles": [
-    "倾角与基线标定方案.md",
-    "pc3d_desktop.md",
+    "pc3d_desktop_docs/windows_handoff_2026-11-18.md",
+    "pc3d_desktop_docs",
+    "file:/media/kevin/CA8C-8448/pc3d_projects_1010/windows_handoff_2026-11-18.md",
+    "Ubuntu 22.04 amd64 搭建雷达相机标定程序运行环境.md",
+    "USB 不识别排查方法.md",
+    "RTK手薄中，点测量，点放样以及线放样等功能的操作以及作用.md",
+    "QT_QML_GENERATE_QMLLS_INI.png",
+    "QML Material 主题颜色的修改.md",
     "PWA 设置图标.md",
-    "未命名.base",
+    "pc3d_desktop.md",
     "Livox LidarExtrinsic.md",
     "如何在 ubuntu20.04 amd64 上搭建 arm64 交叉编译环境.md",
+    "GNSS 北斗星基增强定位测量仪 设备终端通信协议 草稿.md",
+    "gitlab 新地址访问方法.md",
+    "Diagram.svg",
+    "使用 Python Kivy 搭建移动端开发环境.md",
+    "倾角与基线标定方案 3.md",
+    "倾角与基线标定方案.md",
     "控制点与快速点经纬度对比.md",
-    "高光谱相机数据处理与应用开发C++高级程序员招聘需求.md",
     "定位测量仪设备终端通信协议.md",
     "电子界址仪项目优化与验证工作计划.md",
     "底层设备访问的应用授权过程.md",
-    "USB 不识别排查方法.md",
+    "未命名.base",
+    "高光谱相机数据处理与应用开发C++高级程序员招聘需求.md",
     "android/ffmpeg.md",
     "claude/GNSS、IMU和磁力计数据融合方案选择.md",
     "claude/claude obsidian从零开始搭建第二大脑.md",
     "claude",
     "未命名 3.base",
     "未命名 2.base",
-    "QML Material 主题颜色的修改.md",
-    "Ubuntu 22.04 amd64 搭建雷达相机标定程序运行环境.md",
     "cheetah/orb_slam3.md",
     "cheetah/legged_gym.md",
     "cheetah/Doxygen.md",
-    "cheetah/CHAMP - Robot SLAM.md",
-    "android/Android Studio On Linux.md",
-    "linux/Ubuntu 指令杂记.md",
-    "RTK手薄中，点测量，点放样以及线放样等功能的操作以及作用.md",
-    "QT_QML_GENERATE_QMLLS_INI.png",
     "未命名 1.base",
-    "git/导入自定义证书解决 git 仓库https访问时的证书验证失败.md",
-    "git/修改git远程仓库地址.md",
     "索引.base",
     "dot_product.svg",
     "未命名 4.base",
@@ -232,8 +221,6 @@
     "vcpkg 构建交叉编译环境",
     "Diagram2.svg",
     "Diagram1.svg",
-    "Diagram.svg",
-    "lidar",
     "未命名.canvas"
   ]
 }
